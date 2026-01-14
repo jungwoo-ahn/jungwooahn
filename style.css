@@ -1,0 +1,165 @@
+:root {
+    --bg-color: #ffffff;
+    --text-color: #333333;
+    --link-color: #0066cc;
+    --link-hover-color: #004499;
+    --meta-color: #666666;
+    --font-primary: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--font-primary);
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: var(--bg-color);
+    font-size: 16px;
+    -webkit-font-smoothing: antialiased;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 4rem 2rem;
+}
+
+a {
+    color: var(--link-color);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--link-hover-color);
+    text-decoration: underline;
+}
+
+/* Header */
+header {
+    margin-bottom: 4rem;
+}
+
+h1 {
+    font-size: 2.2rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    letter-spacing: -0.02em;
+}
+
+.subtitle {
+    font-size: 1.1rem;
+    color: var(--active-color);
+    margin-bottom: 0.25rem;
+}
+
+.affiliation {
+    margin-bottom: 1rem;
+}
+
+.social-links {
+    margin-top: 1rem;
+    font-size: 0.95rem;
+}
+
+.social-links a {
+    margin-right: 0.5rem;
+    color: var(--text-color);
+    border-bottom: 1px solid #ddd;
+}
+
+.social-links a:hover {
+    border-bottom: 1px solid var(--text-color);
+    text-decoration: none;
+}
+
+/* Sections */
+section {
+    margin-bottom: 3.5rem;
+}
+
+h2 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid #eee;
+    letter-spacing: -0.01em;
+}
+
+/* News List */
+.news-list {
+    list-style: none;
+}
+
+.news-list li {
+    margin-bottom: 0.75rem;
+    display: flex;
+}
+
+.news-list .date {
+    min-width: 100px;
+    font-family: monospace;
+    color: var(--meta-color);
+    font-size: 0.9rem;
+    margin-top: 2px;
+}
+
+/* Publications */
+.publication-item {
+    margin-bottom: 1.5rem;
+}
+
+.pub-title {
+    font-weight: 600;
+}
+
+.pub-authors {
+    color: var(--meta-color);
+    margin: 0.2rem 0;
+}
+
+.pub-venue {
+    font-style: italic;
+    color: var(--text-color);
+}
+
+.pub-links {
+    margin-top: 0.3rem;
+    font-size: 0.9rem;
+}
+
+.pub-links a {
+    margin-right: 0.5rem;
+    font-family: monospace;
+}
+
+/* Software */
+.project-item {
+    margin-bottom: 1rem;
+}
+
+.project-title {
+    font-weight: 600;
+}
+
+/* Education */
+.education-list {
+    list-style: none;
+}
+
+.education-list li {
+    margin-bottom: 1rem;
+}
+
+/* Footer */
+footer {
+    margin-top: 4rem;
+    padding-top: 2rem;
+    border-top: 1px solid #eee;
+    font-size: 0.85rem;
+    color: var(--meta-color);
+}
