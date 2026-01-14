@@ -7,37 +7,42 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
 
     <div class="container">
-        <header>
-            <h1>Jungwoo Ahn</h1>
-            <p class="subtitle">AI Researcher & PhD Student</p>
-            <p class="affiliation">
-                <a href="#">DAVIAN Lab</a>, 
-                <a href="#">KAIST AI</a>
-            </p>
-            <div class="social-links">
-                <a href="#">Email</a> /
-                <a href="#">Google Scholar</a> /
-                <a href="#">GitHub</a> /
-                <a href="#">Twitter</a>
+        <header class="profile-header">
+            <div class="profile-info">
+                <h1>Jungwoo Ahn</h1>
+                <p class="subtitle">AI Researcher & M.S. Student</p>
+                <div class="affiliation-block">
+                    <p><a href="#">DAVIAN Lab</a>, <a href="#">KAIST AI</a></p>
+                </div>
+                <div class="social-links">
+                    <a href="mailto:your.email@kaist.ac.kr" class="social-icon">Email</a>
+                    <a href="#" class="social-icon">Scholar</a>
+                    <a href="#" class="social-icon">GitHub</a>
+                    <a href="#" class="social-icon">Twitter</a>
+                    <a href="#" class="social-icon">CV</a>
+                </div>
+            </div>
+            <div class="profile-image-container">
+                <img src="images/jungwooahn.jpg" alt="Jungwoo Ahn" class="profile-img">
             </div>
         </header>
 
-        <section id="about">
-            <h2>About</h2>
+        <section id="about" class="section-block">
+            <h2 class="section-title">About</h2>
             <p>
                 [Bio Placeholder] I am a Ph.D. student at KAIST AI, advised by [Advisor Name]. 
-                My research interests lie in [Research Interest 1], [Research Interest 2], and [Research Interest 3].
+                My research interests lie in <strong>Generative Models</strong>, <strong>Computer Vision</strong>, and <strong>Multimodal Learning</strong>.
                 Previously, I received my B.S. from [University Name].
             </p>
         </section>
 
-        <section id="news">
-            <h2>News</h2>
+        <section id="news" class="section-block">
+            <h2 class="section-title">News</h2>
             <ul class="news-list">
                 <li>
                     <span class="date">Dec 2025</span>
@@ -50,59 +55,98 @@
             </ul>
         </section>
 
-        <section id="publications">
-            <h2>Publications</h2>
+        <section id="publications" class="section-block">
+            <h2 class="section-title">Publications</h2>
+            
             <div class="publication-item">
-                <div class="pub-title">Paper Title Placeholder: Generative Models for Stuff</div>
-                <div class="pub-authors"><strong>Jungwoo Ahn</strong>, Co-author Name, Co-author Name</div>
-                <div class="pub-venue">Conference on Neural Information Processing Systems (NeurIPS), 2025</div>
-                <div class="pub-links">
-                    <a href="#">[PDF]</a> <a href="#">[Code]</a> <a href="#">[Project Page]</a>
+                <div class="pub-teaser">
+                    <div class="placeholder-img">img</div> 
+                    <!-- <img src="images/paper1.jpg" alt="Teaser"> -->
+                </div>
+                <div class="pub-details">
+                    <div class="pub-title">Paper Title Placeholder: Generative Models for Stuff</div>
+                    <div class="pub-authors"><strong>Jungwoo Ahn</strong>, Co-author Name, Co-author Name</div>
+                    <div class="pub-venue">Conference on Neural Information Processing Systems (NeurIPS), 2025</div>
+                    <div class="pub-links">
+                        <a href="#" class="badge">PDF</a> 
+                        <a href="#" class="badge">Code</a> 
+                        <a href="#" class="badge">Project Page</a>
+                    </div>
                 </div>
             </div>
 
             <div class="publication-item">
-                <div class="pub-title">Another Cool AI Paper Title About Reasoning</div>
-                <div class="pub-authors">Co-author Name, <strong>Jungwoo Ahn</strong>, Co-author Name</div>
-                <div class="pub-venue">International Conference on Learning Representations (ICLR), 2025</div>
-                <div class="pub-links">
-                    <a href="#">[PDF]</a> <a href="#">[Code]</a>
+                <div class="pub-teaser">
+                    <div class="placeholder-img">img</div>
+                </div>
+                <div class="pub-details">
+                    <div class="pub-title">Another Cool AI Paper Title About Reasoning</div>
+                    <div class="pub-authors">Co-author Name, <strong>Jungwoo Ahn</strong>, Co-author Name</div>
+                    <div class="pub-venue">International Conference on Learning Representations (ICLR), 2025</div>
+                    <div class="pub-links">
+                        <a href="#" class="badge">PDF</a> 
+                        <a href="#" class="badge">Code</a>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <section id="software">
-            <h2>Software & Projects</h2>
-            <div class="project-item">
-                <div class="project-title"><a href="#">Awesome-AI-Tool</a></div>
-                <p>A PyTorch library for doing something very specific and useful efficiently.</p>
-            </div>
-            <div class="project-item">
-                <div class="project-title"><a href="#">Research-Codebase-v1</a></div>
-                <p>Official implementation of "Paper Title Placeholder".</p>
+        <section id="software" class="section-block">
+            <h2 class="section-title">Software & Projects</h2>
+            
+            <div class="project-grid">
+                <div class="project-item">
+                    <div class="project-teaser">
+                        <div class="placeholder-img">project</div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-title"><a href="#">Awesome-AI-Tool</a></div>
+                        <p>A PyTorch library for doing something very specific and useful efficiently.</p>
+                        <div class="project-coming-soon">
+                             <a href="#" class="badge-small">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-item">
+                    <div class="project-teaser">
+                         <div class="placeholder-img">project</div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-title"><a href="#">Research-Codebase-v1</a></div>
+                        <p>Official implementation of "Paper Title Placeholder". Optimized for speed.</p>
+                        <div class="project-coming-soon">
+                             <a href="#" class="badge-small">GitHub</a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
         
-        <section id="education">
-            <h2>Education</h2>
+        <section id="education" class="section-block">
+            <h2 class="section-title">Education</h2>
             <ul class="education-list">
                 <li>
-                    <strong>KAIST</strong>, South Korea <br>
-                    Ph.D. in Graduate School of AI (202X - Present)
+                    <div class="edu-top">
+                        <strong>KAIST</strong>, South Korea 
+                        <span class="edu-date">202X - Present</span>
+                    </div>
+                    <div class="edu-degree">Ph.D. in Graduate School of AI</div>
                 </li>
                 <li>
-                    <strong>KAIST</strong>, South Korea <br>
-                    M.S. in Computer Science (202X - 202X)
-                </li>
-                <li>
-                    <strong>University Name</strong>, Location <br>
-                    B.S. in Computer Science (202X - 202X)
+                    <div class="edu-top">
+                        <strong>KAIST</strong>, South Korea 
+                        <span class="edu-date">202X - 202X</span>
+                    </div>
+                    <div class="edu-degree">M.S. in Computer Science</div>
                 </li>
             </ul>
         </section>
 
         <footer>
-            <p>&copy; 2026 Jungwoo Ahn. Powered by <a href="https://pages.github.com/">GitHub Pages</a>.</p>
+            <div class="footer-content">
+                <p>&copy; 2026 Jungwoo Ahn.</p>
+            </div>
         </footer>
     </div>
 
